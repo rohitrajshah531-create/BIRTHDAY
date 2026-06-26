@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Happy Birthday Alka ❤️
+</title>
+
+<!-- Google Fonts -->
+
+<link
+href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(
+135deg,
+#090014,
+#180028,
+#30004f,
+#ff2d75
+);
+
+background-size:400% 400%;
+
+animation:bgMove 15s ease infinite;
+
+overflow:hidden;
+
+color:white;
+
+min-height:100vh;
+
+}
+
+
+/* ==========================================
+BACKGROUND ANIMATION
+========================================== */
+
+@keyframes bgMove{
+
+0%{
+background-position:left;
+}
+
+50%{
+background-position:right;
+}
+
+100%{
+background-position:left;
+}
+
+}
+
+
+/* ==========================================
+SECTIONS
+========================================== */
+
+section{
+
+width:100%;
+height:100vh;
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+flex-direction:column;
+
+position:relative;
+
+padding:20px;
+
+}
+
+#page1{
+
+display:flex;
+
+}
+
+
+/* ==========================================
+LOADER
+========================================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#05000d;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+z-index:999999;
+
+animation:hideLoader 3s forwards;
+
+}
+
+.loader-content{
+
+text-align:center;
+
+}
+
+.loader-content h1{
+
+font-family:'Cinzel',serif;
+
+font-size:34px;
+
+letter-spacing:3px;
+
+margin-bottom:30px;
+
+}
+
+.heart-loader{
+
+position:relative;
+
+width:45px;
+
+height:45px;
+
+background:#ff2d75;
+
+margin:auto;
+
+transform:rotate(45deg);
+
+animation:heartbeat 1s infinite;
+
+}
+
+.heart-loader::before,
+.heart-loader::after{
+
+content:"";
+
+position:absolute;
+
+width:45px;
+height:45px;
+
+background:#ff2d75;
+
+border-radius:50%;
+
+}
+
+.heart-loader::before{
+
+left:-22px;
+
+}
+
+.heart-loader::after{
+
+top:-22px;
+
+}
+
+@keyframes heartbeat{
+
+50%{
+
+transform:rotate(45deg) scale(1.25);
+
+}
+
+}
+
+@keyframes hideLoader{
+
+90%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+}
+
+
+/* ==========================================
+GLASS CARD
+========================================== */
+
+.glass{
+
+width:430px;
+
+padding:45px;
+
+border-radius:35px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.25);
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.45);
+
+text-align:center;
+
+}
+
+
+/* ==========================================
+TEXT
+========================================== */
+
+.glass h3{
+
+font-family:'Cinzel';
+
+letter-spacing:4px;
+
+font-size:22px;
+
+margin-bottom:20px;
+
+}
+
+.glass h1{
+
+font-family:'Great Vibes';
+
+font-size:78px;
+
+margin-bottom:20px;
+
+color:white;
+
+text-shadow:
+
+0 0 15px hotpink,
+
+0 0 35px deeppink;
+
+}
+
+.glass p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+/* ==========================================
+   GIFT BOX
+========================================== */
+
+.gift{
+
+font-size:100px;
+
+cursor:pointer;
+
+animation:giftBounce 2s infinite;
+
+transition:.5s;
+
+margin-bottom:25px;
+
+}
+
+.gift:hover{
+
+transform:scale(1.15) rotate(-10deg);
+
+filter:drop-shadow(0 0 20px gold);
+
+}
+
+@keyframes giftBounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+/* ==========================================
+BUTTON
+========================================== */
+
+button{
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+background:linear-gradient(90deg,#ff2d75,#ff7eb3);
+
+color:white;
+
+box-shadow:0 0 20px hotpink;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+
+0 0 20px hotpink,
+
+0 0 50px deeppink;
+
+}
+
+
+/* ==========================================
+FLOATING HEARTS
+========================================== */
+
+#hearts{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-1;
+
+}
+
+.heart{
+
+position:absolute;
+
+animation:heartFloat linear forwards;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:translateY(100vh);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
+}
+
+}
+
+
+/* ==========================================
+STARS
+========================================== */
+
+.stars{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+z-index:-2;
+
+}
+
+.star{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:0 0 10px white;
+
+animation:twinkle 2s infinite alternate;
+
+}
+@keyframes twinkle{
+0%{opacity:.3;}
+100%{
+opacity:1;
+transform:scale(1.6);
+}
+}
+/* ==========================================
+TITLE
+========================================== */
+
+.title{
+
+font-family:'Great Vibes';
+
+font-size:70px;
+
+margin-bottom:30px;
+
+text-shadow:0 0 20px hotpink;
+
+}
+
+
+/* ==========================================
+PHOTO SLIDER
+========================================== */
+
+.slider{
+
+width:330px;
+
+height:470px;
+
+overflow:hidden;
+
+border-radius:25px;
+
+border:5px solid white;
+
+box-shadow:0 0 40px rgba(255,255,255,.25);
+
+}
+
+.slides{
+
+display:flex;
+
+width:300%;
+
+animation:slide 12s infinite;
+
+}
+
+.slides img{
+
+width:330px;
+
+height:470px;
+
+object-fit:cover;
+
+}
+
+@keyframes slide{
+
+0%,30%{
+
+transform:translateX(0);
+
+}
+
+35%,65%{
+
+transform:translateX(-330px);
+
+}
+
+70%,95%{
+
+transform:translateX(-660px);
+
+}
+
+100%{
+
+transform:translateX(0);
+
+}
+
+}
+
+
+/* ==========================================
+WISH CARD
+========================================== */
+
+.wishCard{
+
+width:700px;
+
+padding:45px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+text-align:center;
+
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+}
+
+.wishCard h1{
+
+font-family:'Great Vibes';
+
+font-size:70px;
+
+margin-bottom:20px;
+
+}
+
+#typing{
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+
+/* ==========================================
+DECORATION
+========================================== */
+
+.lights{
+
+position:absolute;
+
+top:20px;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-evenly;
+
+}
+
+.lights span{
+
+width:15px;
+
+height:15px;
+
+border-radius:50%;
+
+background:gold;
+
+box-shadow:0 0 20px gold;
+
+animation:blink 1s infinite alternate;
+
+}
+
+@keyframes blink{
+
+100%{
+
+opacity:.3;
+
+}
+
+}
+
+.balloons{
+
+position:absolute;
+
+bottom:-150px;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-evenly;
+
+}
+
+.balloon{
+
+width:70px;
+
+height:90px;
+
+border-radius:50%;
+
+animation:fly 8s linear infinite;
+
+position:relative;
+
+}
+
+.balloon::after{
+
+content:"";
+
+position:absolute;
+
+width:2px;
+
+height:80px;
+
+background:white;
+
+left:50%;
+
+top:90px;
+
+}
+
+.red{background:#ff4d6d;}
+.blue{background:#4d8dff;}
+.pink{background:#ff66cc;}
+.yellow{background:#ffd93d;}
+.green{background:#6bff8a;}
+
+@keyframes fly{
+
+100%{
+
+transform:translateY(-130vh);
+
+}
+
+}
+
+
+/* ==========================================
+CAKE
+========================================== */
+
+#cake{
+
+position:absolute;
+
+bottom:80px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.layer{
+
+width:220px;
+
+height:45px;
+
+margin:3px;
+
+border-radius:10px;
+
+background:linear-gradient(#ff9ecf,#ff4d88);
+
+}
+
+.candle{
+
+width:15px;
+
+height:50px;
+
+background:white;
+
+margin-top:-145px;
+
+}
+
+.flame{
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+background:gold;
+
+box-shadow:0 0 20px orange;
+
+animation:flicker .4s infinite alternate;
+
+}
+
+@keyframes flicker{
+
+100%{
+
+transform:scale(1.3);
+
+}
+
+}
+
+
+/* ==========================================
+RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.glass{
+
+width:92%;
+
+padding:30px;
+
+}
+
+.glass h1{
+
+font-size:55px;
+
+}
+
+.title{
+
+font-size:50px;
+
+}
+
+.slider{
+
+width:260px;
+
+height:360px;
+
+}
+
+.slides img{
+
+width:260px;
+
+height:360px;
+
+}
+
+.wishCard{
+
+width:92%;
+
+padding:25px;
+
+}
+
+.wishCard h1{
+
+font-size:50px;
+
+}
+
+#typing{
+
+font-size:18px;
+
+}
+
+}
+/* ==========================================
+   PAGE FADE
+========================================== */
+
+.fade{
+animation:fadePage .8s ease;
+}
+
+@keyframes fadePage{
+
+0%{
+opacity:0;
+transform:scale(.95);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+/* ==========================================
+CONFETTI
+========================================== */
+
+.confetti{
+
+position:fixed;
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+z-index:9999;
+
+animation:confettiFall linear forwards;
+
+}
+
+@keyframes confettiFall{
+
+0%{
+
+transform:
+translateY(-20px)
+rotate(0deg);
+
+}
+
+100%{
+
+transform:
+translateY(110vh)
+rotate(720deg);
+
+}
+
+}
+
+
+/* ==========================================
+FIREWORK
+========================================== */
+
+.firework{
+
+position:fixed;
+
+width:15px;
+
+height:15px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:
+
+0 0 20px white,
+
+0 0 40px gold,
+
+0 0 70px hotpink,
+
+0 0 100px deeppink;
+
+animation:explode 1s forwards;
+
+z-index:9999;
+
+}
+
+@keyframes explode{
+
+0%{
+
+transform:scale(.2);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(8);
+
+opacity:0;
+
+}
+
+}
+
+
+/* ==========================================
+ROSE PETALS
+========================================== */
+
+.petal{
+
+position:fixed;
+
+top:-40px;
+
+pointer-events:none;
+
+animation:roseFall linear forwards;
+
+z-index:999;
+
+}
+
+@keyframes roseFall{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(110vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+
+/* ==========================================
+SPARK CURSOR
+========================================== */
+
+.spark{
+
+position:fixed;
+
+width:8px;
+
+height:8px;
+
+border-radius:50%;
+
+background:white;
+
+pointer-events:none;
+
+box-shadow:
+
+0 0 10px white,
+
+0 0 25px hotpink;
+
+animation:spark .8s linear forwards;
+
+z-index:99999;
+
+}
+
+@keyframes spark{
+
+100%{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+
+/* ==========================================
+SMOOTH IMAGES
+========================================== */
+
+.slider img{
+
+transition:1s;
+
+}
+
+.slider img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* ==========================================
+BUTTON CLICK
+========================================== */
+
+button:active{
+
+transform:scale(.96);
+
+}
+
+
+/* ==========================================
+SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:hotpink;
+
+border-radius:20px;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ===============================
+BACKGROUND STARS
+================================ -->
+
+<div class="stars"></div>
+
+<!-- ===============================
+LOADER
+================================ -->
+
+<div id="loader">
+
+<div class="loader-content">
+
+<h1>
+
+Loading Your Surprise...
+
+</h1>
+
+<div class="heart-loader"></div>
+
+</div>
+
+</div>
+
+<!-- ===============================
+FLOATING HEARTS
+================================ -->
+
+<div id="hearts"></div>
+
+<!-- ===============================
+PAGE 1
+================================ -->
+
+<section id="page1">
+
+<div class="glass">
+
+<h3>
+
+A Special Surprise
+
+</h3>
+
+<h1>
+
+For Alka ❤️
+
+</h1>
+
+<p>
+
+Someone very special
+has prepared
+something beautiful
+for you...
+
+</p>
+
+<div class="gift glow">
+
+🎁
+
+</div>
+
+<button id="openGift">
+
+Open The Special Surprise
+
+</button>
+
+</div>
+
+</section>
+<!-- ===============================
+PAGE 2
+================================ -->
+
+<section id="page2">
+
+<h1 id="decorateTitle">
+
+Let's Decorate 🎈
+
+</h1>
+
+<div id="decorateArea">
+
+<!-- Fairy Lights -->
+
+<div class="lights">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<!-- Balloons -->
+
+<div class="balloons">
+
+<div class="balloon red"></div>
+
+<div class="balloon blue"></div>
+
+<div class="balloon pink"></div>
+
+<div class="balloon yellow"></div>
+
+<div class="balloon green"></div>
+
+</div>
+
+<!-- Cake -->
+
+<div id="cake">
+
+<div class="layer"></div>
+
+<div class="layer"></div>
+
+<div class="layer"></div>
+
+<div class="candle"></div>
+
+<div class="flame"></div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===============================
+PAGE 3 - PHOTO GALLERY
+================================ -->
+
+<section id="page3">
+
+    <h1 class="title">
+        Beautiful Memories ❤️
+    </h1>
+
+    <div class="slider">
+
+        <div class="slides">
+
+            <!-- Photo 1 -->
+            <img src="C:\Users\gk792\OneDrive\Documents" alt="Alka Photo 1">
+
+            <!-- Photo 2 -->
+            <img src="C:\Users\gk792\Downloads" alt="Alka Photo 2">
+
+            <!-- Photo 3 -->
+            <img src="C:\Users\gk792\Downloads" alt="Alka Photo 3">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===============================
+PAGE 4
+================================ -->
+
+<section id="page4">
+
+<div class="wishCard">
+
+<h1>
+
+Happy Birthday Alka ❤️
+
+</h1>
+
+<p id="typing"></p>
+
+</div>
+
+</section>
+
+<!-- ===============================
+BACKGROUND MUSIC
+================================ -->
+<audio id="music" loop>
+    <source src="C:\Users\gk792\Downloads\song.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+/* ==========================================
+   ELEMENTS
+========================================== */
+
+const loader = document.getElementById("loader");
+
+const page1 = document.getElementById("page1");
+const page2 = document.getElementById("page2");
+const page3 = document.getElementById("page3");
+const page4 = document.getElementById("page4");
+
+const music = document.getElementById("music");
+
+const typing = document.getElementById("typing");
+
+const decorateTitle =
+document.getElementById("decorateTitle");
+
+const openGift =
+document.getElementById("openGift");
+
+const stars =
+document.querySelector(".stars");
+
+
+/* ==========================================
+   LOADER
+========================================== */
+
+window.onload=()=>{
+
+setTimeout(()=>{
+
+loader.style.display="none";
+
+page1.style.display="flex";
+
+createStars();
+
+createHearts();
+
+},3000);
+
+};
+
+
+/* ==========================================
+   STARS
+========================================== */
+
+function createStars(){
+
+for(let i=0;i<180;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.top=Math.random()*100+"vh";
+
+star.style.animationDelay=
+Math.random()*2+"s";
+
+stars.appendChild(star);
+
+}
+
+}
+
+
+/* ==========================================
+   HEARTS
+========================================== */
+
+function createHearts(){
+
+setInterval(()=>{
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML=["❤️","💖","💕","💗"]
+[Math.floor(Math.random()*4)];
+
+heart.style.left=
+Math.random()*100+"vw";
+
+heart.style.fontSize=
+(20+Math.random()*20)+"px";
+
+heart.style.animationDuration=
+(5+Math.random()*4)+"s";
+
+document.getElementById("hearts")
+.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},9000);
+
+},300);
+
+}
+
+
+/* ==========================================
+   OPEN GIFT
+========================================== */
+
+openGift.onclick=()=>{
+
+page1.style.display="none";
+
+page2.style.display="flex";
+
+music.play();
+
+startDecoration();
+
+};
+
+
+/* ==========================================
+   DECORATION STEPS
+========================================== */
+
+const steps=[
+
+"🎈 Bringing Balloons...",
+
+"✨ Turning Fairy Lights ON...",
+
+"🎀 Decorating The Hall...",
+
+"🎊 Adding Confetti...",
+
+"🎂 Birthday Cake Ready...",
+
+"🕯 Lighting Candles...",
+
+"🎆 Everything Is Ready..."
+
+];
+
+let currentStep=0;
+
+
+/* ==========================================
+   START DECORATION
+========================================== */
+
+function startDecoration(){
+
+lightsOn();
+
+setTimeout(balloonsRelease,1500);
+
+setTimeout(cakeAppear,3500);
+
+let timer=setInterval(()=>{
+
+decorateTitle.innerHTML=
+steps[currentStep];
+
+currentStep++;
+
+if(currentStep===steps.length){
+
+clearInterval(timer);
+
+setTimeout(showGallery,2500);
+
+}
+
+},2000);
+
+}
+/* ==========================================
+   LIGHTS
+========================================== */
+
+function lightsOn(){
+
+document.querySelector(".lights").style.opacity="1";
+
+}
+
+
+/* ==========================================
+   BALLOONS
+========================================== */
+
+function balloonsRelease(){
+
+const balloons=document.querySelectorAll(".balloon");
+
+balloons.forEach((balloon,index)=>{
+
+balloon.style.animationDelay=index+"s";
+
+});
+
+}
+
+
+/* ==========================================
+   CAKE
+========================================== */
+
+function cakeAppear(){
+
+const cake=document.getElementById("cake");
+
+cake.style.opacity="1";
+
+cake.style.transform="scale(1)";
+
+}
+
+
+/* ==========================================
+   SHOW GALLERY
+========================================== */
+
+function showGallery(){
+
+page2.style.display="none";
+
+page3.style.display="flex";
+
+fadePage(page3);
+
+setTimeout(showWish,10000);
+
+}
+
+
+/* ==========================================
+   PAGE FADE
+========================================== */
+
+function fadePage(page){
+
+page.classList.add("fade");
+
+setTimeout(()=>{
+
+page.classList.remove("fade");
+
+},800);
+
+}
+
+
+/* ==========================================
+   SHOW WISH
+========================================== */
+
+function showWish(){
+
+page3.style.display="none";
+
+page4.style.display="flex";
+
+fadePage(page4);
+
+typeMessage();
+
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+const message=
+
+`Happy Birthday Alka ❤️
+
+To my cutest friend,
+
+who has always been
+
+like a sister to me. 💖
+
+May your smile always shine.
+
+May your dreams always come true.
+
+Stay Happy.
+
+Stay Blessed.
+
+Enjoy Your Day.
+
+— Rohit ❤️`;
+
+
+/* ==========================================
+   TYPING
+========================================== */
+
+function typeMessage(){
+
+typing.innerHTML="";
+
+let i=0;
+
+let timer=setInterval(()=>{
+
+typing.innerHTML+=message.charAt(i);
+
+i++;
+
+if(i==message.length){
+
+clearInterval(timer);
+
+finalSurprise();
+
+}
+
+},45);
+
+}
+
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+function confettiBlast(){
+
+for(let i=0;i<150;i++){
+
+let c=document.createElement("div");
+
+c.className="confetti";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-20px";
+
+c.style.background=
+
+`hsl(${Math.random()*360},100%,60%)`;
+
+c.style.animationDuration=
+
+(2+Math.random()*2)+"s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.remove();
+
+},5000);
+
+}
+
+}
+
+
+/* ==========================================
+   FIREWORKS
+========================================== */
+
+function fireworks(){
+
+for(let i=0;i<20;i++){
+
+setTimeout(()=>{
+
+let fire=document.createElement("div");
+
+fire.className="firework";
+
+fire.style.left=Math.random()*100+"vw";
+
+fire.style.top=Math.random()*70+"vh";
+
+document.body.appendChild(fire);
+
+setTimeout(()=>{
+
+fire.remove();
+
+},1200);
+
+},i*250);
+
+}
+
+}
+
+
+/* ==========================================
+   ROSE PETALS
+========================================== */
+
+function rosePetals(){
+
+setInterval(()=>{
+
+let petal=document.createElement("div");
+
+petal.className="petal";
+
+petal.innerHTML="🌹";
+
+petal.style.left=Math.random()*100+"vw";
+
+petal.style.fontSize=
+
+(20+Math.random()*20)+"px";
+
+petal.style.animationDuration=
+
+(6+Math.random()*3)+"s";
+
+document.body.appendChild(petal);
+
+setTimeout(()=>{
+
+petal.remove();
+
+},9000);
+
+},500);
+
+}
+
+
+/* ==========================================
+   FINAL SURPRISE
+========================================== */
+
+function finalSurprise(){
+
+confettiBlast();
+
+fireworks();
+
+rosePetals();
+
+}
+/* ==========================================
+   CURSOR SPARK EFFECT
+========================================== */
+
+document.addEventListener("mousemove",(e)=>{
+
+let spark=document.createElement("div");
+
+spark.className="spark";
+
+spark.style.left=e.pageX+"px";
+
+spark.style.top=e.pageY+"px";
+
+document.body.appendChild(spark);
+
+setTimeout(()=>{
+
+spark.remove();
+
+},800);
+
+});
+
+
+/* ==========================================
+   MUSIC FADE IN
+========================================== */
+
+music.volume=0;
+
+function musicFadeIn(){
+
+let volume=0;
+
+let fade=setInterval(()=>{
+
+volume+=0.05;
+
+if(volume>=1){
+
+volume=1;
+
+clearInterval(fade);
+
+}
+
+music.volume=volume;
+
+},200);
+
+}
+
+
+/* ==========================================
+   OPEN GIFT UPDATE
+========================================== */
+
+openGift.onclick=()=>{
+
+page1.style.display="none";
+
+page2.style.display="flex";
+
+music.play();
+
+musicFadeIn();
+
+startDecoration();
+
+};
+
+
+/* ==========================================
+   IMAGE ANIMATION
+========================================== */
+
+const images=document.querySelectorAll(".slides img");
+
+images.forEach((img)=>{
+
+img.addEventListener("mouseenter",()=>{
+
+img.style.transform="scale(1.08)";
+
+});
+
+img.addEventListener("mouseleave",()=>{
+
+img.style.transform="scale(1)";
+
+});
+
+});
+
+
+/* ==========================================
+   FINAL MESSAGE EFFECT
+========================================== */
+
+function endingGlow(){
+
+document.querySelector(".wishCard").style.boxShadow=
+
+"0 0 30px hotpink,0 0 60px deeppink";
+
+}
+
+setTimeout(()=>{
+
+endingGlow();
+
+},25000);
+
+
+/* ==========================================
+   END
+========================================== */
+
+console.log("Premium Birthday Website Loaded ❤️");
+</script>
+
+</body>
+
+</html>
